@@ -33,8 +33,9 @@
     function hideWebflow() {
       var findElement = document.querySelector('.w-webflow-badge');
       if (findElement) {
-        findElement.textContent = ''
-        findElement.remove();
+        findElement.textContent = '';
+        findElement.style.pointerEvents = 'none';	
+        //findElement.remove();
         return;
       }
       setTimeout(hideWebflow,100);
